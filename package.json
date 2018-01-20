@@ -1,0 +1,39 @@
+{
+  "name": "klasa-docgen",
+  "version": "0.0.1",
+  "description": "Klasa documentation generator",
+  "main": "src/index.js",
+  "bin": {
+    "kdocgen": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrJacz/klasa-docgen.git"
+  },
+  "keywords": [
+    "Klasa",
+    "Dirigeants",
+    "Klasa-docgen",
+    "docs",
+    "doc",
+    "gen",
+    "doc-gen"
+  ],
+  "author": "Jacz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MrJacz/klasa-docgen/issues"
+  },
+  "homepage": "https://github.com/MrJacz/klasa-docgen#readme",
+  "devDependencies": {
+    "eslint": "^4.15.0"
+  },
+  "dependencies": {
+    "fs-nextra": "^0.3.2",
+    "jsdoc-to-markdown": "^4.0.1",
+    "yargs": "^10.1.1"
+  }
+}
