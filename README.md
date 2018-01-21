@@ -5,4 +5,4 @@ A documentation generator for the new upcoming Klasa Docs (and perhaps Komada Do
 - [Amish Shah (Hydrabolt)](https://github.com/hydrabolt)
 - [Schuyler Cebulskie (Gawdl3y)](https://github.com/Gawdl3y)
 
-The orignal code is based on [**Discord.js Doc-gen**](https://github.com/discordjs/docgen).
+The original code is based on [**Discord.js Doc-gen**](https://github.com/discordjs/docgen).
