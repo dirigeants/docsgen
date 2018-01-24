@@ -93,14 +93,12 @@ class Documentation {
 	}
 
 	toJSON() {
-		const meta = {
-			generator: version,
-			format: this.constructor.FORMAT_VERSION,
-			date: Date.now()
-		};
-
 		const serialized = {
-			meta,
+			meta: {
+				generator: version,
+				format: this.constructor.FORMAT_VERSION,
+				date: Date.now()
+			},
 			custom: this.custom
 		};
 
