@@ -29,7 +29,7 @@ class Main {
 
 		if (config.output) {
 			console.log(`Writing to ${config.output}...`);
-			await fs.writeFile(config.output, output);
+			await fs.outputFile(config.output, output);
 		}
 
 		console.log('Done!');
