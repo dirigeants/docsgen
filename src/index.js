@@ -50,7 +50,7 @@ class Main {
 	}
 
 	parseCategory(customDir, category) {
-		const name = category.name.toLowerCase();
+		const { name } = category;
 		const dir = join(customDir, category.path || name);
 		this.custom[name] = { name, files: {} };
 		this.categoryCount++;
