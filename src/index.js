@@ -56,17 +56,17 @@ class Main {
 		this.categoryCount++;
 		return Promise.all(category.files.map(file => {
 			const extension = extname(file.path);
-			return this.readFile(name, join(dir, file.path), extension.toLowerCase().replace(/^\./, ''), file.name || basename(file.path, extension));
+			return this.readFile(name, join(dir, file.path), extension.toLowerCase().replace(/^\./, ''), file.name || basename(file.path, extension), basename(file.path, extension));
 		}));
 	}
 
-	async readFile(categoryName, fileRootPath, type, name) {
+	async readFile(categoryName, fileRootPath, type, name, id) {
 		const content = await fs.readFile(fileRootPath, 'utf-8');
 		const path = relative(config.root, fileRootPath).replace(/\\/g, '/');
 
 		if (config.verbose) console.log(`Loaded custom docs file ${categoryName}/${name}`);
 
-		this.custom[categoryName].files[name] = { name, type, content, path };
+		this.custom[categoryName].files[id] = { name, type, content, path };
 		this.fileCount++;
 	}
 
