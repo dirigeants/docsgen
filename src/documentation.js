@@ -1,5 +1,6 @@
 const path = require('path');
 const DocumentedClass = require('./types/class');
+const DocumentedInterface = require('./types/interface');
 const DocumentedTypeDef = require('./types/typedef');
 const DocumentedConstructor = require('./types/constructor');
 const DocumentedMember = require('./types/member');
@@ -16,6 +17,7 @@ class Documentation {
 	constructor(items, custom) {
 		this.rootTypes = {
 			class: [DocumentedClass, 'classes'],
+			interface: [DocumentedInterface, 'classes'],
 			typedef: [DocumentedTypeDef, 'typedefs'],
 			external: [DocumentedExternal, 'externals']
 		};
@@ -27,7 +29,7 @@ class Documentation {
 			event: DocumentedEvent
 		};
 
-		for (const type in this.rootTypes) this[this.rootTypes[type][1]] = new Map();
+		for (const type in this.rootTypes) if (!this[this.rootTypes[type][1]]) this[this.rootTypes[type][1]] = new Map();
 		this.custom = custom;
 		this.parse(items);
 	}
