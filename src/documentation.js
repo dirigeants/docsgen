@@ -1,6 +1,5 @@
 const path = require('path');
 const DocumentedClass = require('./types/class');
-const DocumentedInterface = require('./types/interface');
 const DocumentedTypeDef = require('./types/typedef');
 const DocumentedConstructor = require('./types/constructor');
 const DocumentedMember = require('./types/member');
@@ -17,7 +16,6 @@ class Documentation {
 	constructor(items, custom) {
 		this.rootTypes = {
 			class: [DocumentedClass, 'classes'],
-			interface: [DocumentedInterface, 'interfaces'],
 			typedef: [DocumentedTypeDef, 'typedefs'],
 			external: [DocumentedExternal, 'externals']
 		};
