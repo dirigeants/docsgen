@@ -3,8 +3,9 @@ const DocumentedClass = require('./class');
 class DocumentedInterface extends DocumentedClass {
 
 	registerMetaInfo(data) {
-		data.kind = 'class';
 		super.registerMetaInfo(data);
+		this.directData = data;
+		this.directData.kind = 'class';
 	}
 
 	serializer() {
