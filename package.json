@@ -2,6 +2,8 @@
   "name": "docgen",
   "version": "0.0.1",
   "description": "Klasa documentation generator",
+  "author": "Dirigeants",
+  "private": true,
   "main": "src/index.js",
   "bin": {
     "dg": "src/index.js"
@@ -22,8 +24,6 @@
     "gen",
     "doc-gen"
   ],
-  "author": "Dirigeants",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dirigeants/docsgen/issues"
   },
