@@ -29,7 +29,8 @@ class DocumentedMember extends DocumentedItem {
 			default: this.directData.default,
 			type: this.directData.type.toJSON(),
 			props: this.directData.properties ? this.directData.properties.map(param => param.toJSON()) : undefined,
-			meta: this.directData.meta.toJSON()
+			meta: this.directData.meta.toJSON(),
+			since: this.directData.since
 		};
 	}
 
