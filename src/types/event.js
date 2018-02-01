@@ -20,7 +20,8 @@ class DocumentedEvent extends DocumentedItem {
 			see: this.directData.see,
 			deprecated: this.directData.deprecated,
 			params: this.directData.params ? this.directData.params.map(param => param.toJSON()) : undefined,
-			meta: this.directData.meta.toJSON()
+			meta: this.directData.meta.toJSON(),
+			since: this.directData.since
 		};
 	}
 
