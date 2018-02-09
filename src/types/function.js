@@ -16,6 +16,12 @@ class DocumentedFunction extends DocumentedItem {
 			data.returns.directData.description = returnDescription;
 			data.returns.directData.nullable = returnNullable;
 		}
+		if (data.yields) {
+			let yieldDescription;
+			if (data.yields[0].description) yieldDescription = data.yields[0].description;
+			data.yields = new DocumentedVarType(this, data.yields[0].type);
+			data.yields.directData.description = yieldDescription;
+		}
 		if (data.params) {
 			if (data.params.length > 0) for (let i = 0; i < data.params.length; i++) data.params[i] = new DocumentedParam(this, data.params[i]);
 			else data.params = undefined;
@@ -40,7 +46,7 @@ class DocumentedFunction extends DocumentedItem {
 			throws: this.directData.throws,
 			params: this.directData.params ? this.directData.params.map(param => param.toJSON()) : undefined,
 			returns: this.directData.returns ? this.directData.returns.toJSON() : undefined,
-			returnsDescription: this.directData.returnsDescription,
+			yields: this.directData.yields ? this.directData.yields.toJSON() : undefined,
 			meta: this.directData.meta.toJSON(),
 			since: this.directData.since
 		};
