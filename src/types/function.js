@@ -48,6 +48,7 @@ class DocumentedFunction extends DocumentedItem {
 			returns: this.directData.returns ? this.directData.returns.toJSON() : undefined,
 			yields: this.directData.yields ? this.directData.yields.toJSON() : undefined,
 			generator: this.directData.generator,
+			async: this.directData.async,
 			meta: this.directData.meta.toJSON(),
 			since: this.directData.since
 		};
