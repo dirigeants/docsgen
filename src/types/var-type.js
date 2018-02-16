@@ -8,7 +8,10 @@ class DocumentedVarType extends DocumentedItem {
 
 	serializer() {
 		const names = [];
-		for (const name of this.directData.names) names.push(this.constructor.splitVarName(name));
+		for (const name of this.directData.names) {
+			const item = this.parent.directData.async ? `Promise<${name}>` : name;
+			names.push(this.constructor.splitVarName(item));
+		}
 		if (!this.directData.description && !this.directData.nullable) return names;
 		return {
 			types: names,
