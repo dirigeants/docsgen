@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/dirigeants/docsgen#readme",
   "devDependencies": {
-    "eslint": "^4.15.0",
+    "eslint": "^5.9.0",
     "eslint-config-klasa": "github:dirigeants/klasa-lint"
   },
   "dependencies": {
