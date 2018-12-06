@@ -96,8 +96,7 @@ class Documentation {
 		const serialized = {
 			meta: {
 				generator: version,
-				format: this.constructor.FORMAT_VERSION,
-				date: Date.now()
+				format: this.constructor.FORMAT_VERSION
 			},
 			custom: this.custom
 		};
