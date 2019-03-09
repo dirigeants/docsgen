@@ -30,7 +30,7 @@ class ClassyKyra extends EventEmitter {
 		this.classy = true;
 		/**
 		 * Is Kyra cool?
-		 * @type {?Boolean}
+		 * @type {Boolean}
 		 */
 		this.cool = true;
 	}
