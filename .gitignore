@@ -60,3 +60,5 @@ typings/
 # Custom
 package-lock.json
 test/docs/docs.json
+
+test/assets/docs\.json
