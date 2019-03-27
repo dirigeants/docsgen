@@ -35,7 +35,7 @@
     "eslint-config-klasa": "github:dirigeants/klasa-lint"
   },
   "dependencies": {
-    "ava": "^1.4.0",
+    "ava": "^1.4.1",
     "fs-nextra": "^0.4.5",
     "jsdoc-to-markdown": "^4.0.1",
     "yargs": "^13.2.2"
