@@ -31,11 +31,11 @@
   },
   "homepage": "https://github.com/dirigeants/docsgen#readme",
   "devDependencies": {
+    "ava": "^2.0.0",
     "eslint": "^5.16.0",
     "eslint-config-klasa": "github:dirigeants/klasa-lint"
   },
   "dependencies": {
-    "ava": "^2.0.0",
     "fs-nextra": "^0.4.5",
     "jsdoc-to-markdown": "^5.0.0",
     "yargs": "^13.2.4"
