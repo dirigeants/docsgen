@@ -1541,10 +1541,10 @@ flatted@^2.0.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.0.tgz#55122b6536ea496b4b44893ee2608141d10d9916"
   integrity sha512-R+H8IZclI8AAkSBRQJLVOsxwAoHd6WC40b4QTNWIjzAa6BXOBfQcM587MXDTVPeYaopFNWHUFLx7eNmHDSxMWg==
 
-fs-nextra@^0.4.5:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/fs-nextra/-/fs-nextra-0.4.5.tgz#0f44a00dd6c0547adaf59ce875e59941d0c70664"
-  integrity sha512-oY2o6j0izYzJWp2sow21SekkR3qeMZqHV5ZfNFvfKimFU7piw1/AWwiwbcWjuSfwrfCmHyHymWZOyNbKOzew5g==
+fs-nextra@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/fs-nextra/-/fs-nextra-0.4.6.tgz#db83e1c8d451caad804ff1478e399875f7134c94"
+  integrity sha512-Z258Sdpe+FsyJDjU2DT/q+PedjnSOvSeDROCD9CwDerlNt+GMHOLmfGnDLYMPnHXPWPRJNfozfnMjJn8kHmYng==
 
 fs-then-native@^2.0.0:
   version "2.0.0"
