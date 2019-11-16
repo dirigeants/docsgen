@@ -38,6 +38,6 @@
   "dependencies": {
     "fs-nextra": "^0.4.7",
     "jsdoc-to-markdown": "^5.0.2",
-    "yargs": "^14.2.0"
+    "yargs": "^15.0.1"
   }
 }
