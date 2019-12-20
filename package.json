@@ -32,7 +32,7 @@
   "homepage": "https://github.com/dirigeants/docsgen#readme",
   "devDependencies": {
     "ava": "^2.4.0",
-    "eslint": "^6.7.2",
+    "eslint": "^6.8.0",
     "eslint-config-klasa": "github:dirigeants/klasa-lint"
   },
   "dependencies": {
